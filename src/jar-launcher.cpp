@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <cassert>
 //SimpleIni includes
-#include "../libs/simpleini/SimpleIni.h"
+#include "../lib/simpleini/SimpleIni.h"
 
 int APIENTRY WinMain(
 		HINSTANCE hInstance,
@@ -14,7 +14,7 @@ int APIENTRY WinMain(
 	//printf("Loading config file\n");
 	CSimpleIni ini;
 	ini.SetUnicode();
-	ini.LoadFile("data/jar-launcher.ini");
+	ini.LoadFile("config/jar-launcher.ini");
 
 	//load keys
 	//printf("Loading keys\n");
